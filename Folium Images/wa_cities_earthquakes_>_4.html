@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_53acb47c67f3e85171b664812dcbbfbd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+             <h3 align="center" style="font-size:20px"><b>Washington Earthquakes Over 4.5 Magnitude</b></h3>
+             
+    
+            <div class="folium-map" id="map_53acb47c67f3e85171b664812dcbbfbd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_53acb47c67f3e85171b664812dcbbfbd = L.map(
+                "map_53acb47c67f3e85171b664812dcbbfbd",
+                {
+                    center: [47.3511, -120.7401],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a07f3570475b47e4b423f8c8940332c0 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_53acb47c67f3e85171b664812dcbbfbd);
+        
+    
+            var marker_33de571d0b6c3ea081ca3078753bb72a = L.marker(
+                [46.202928574285714, -122.18315238857143],
+                {}
+            ).addTo(map_53acb47c67f3e85171b664812dcbbfbd);
+        
+    
+            var icon_bba11d97ee288f8fcf60023f5776ee81 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_33de571d0b6c3ea081ca3078753bb72a.setIcon(icon_bba11d97ee288f8fcf60023f5776ee81);
+        
+    
+        var popup_4801c156a232576239801b03a8949561 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1c9324b50a388470a5b01826915d1cd = $(`<div id="html_f1c9324b50a388470a5b01826915d1cd" style="width: 100.0%; height: 100.0%;">Amboy: Earthquakes over magnitude 4.5</div>`)[0];
+                popup_4801c156a232576239801b03a8949561.setContent(html_f1c9324b50a388470a5b01826915d1cd);
+            
+        
+
+        marker_33de571d0b6c3ea081ca3078753bb72a.bindPopup(popup_4801c156a232576239801b03a8949561)
+        ;
+
+        
+    
+    
+            var marker_7922349dffc5a75b3017bce70d0e23c0 = L.marker(
+                [48.5, -122.8],
+                {}
+            ).addTo(map_53acb47c67f3e85171b664812dcbbfbd);
+        
+    
+            var icon_1370f636d64fd4310217be9a8bb5fef7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7922349dffc5a75b3017bce70d0e23c0.setIcon(icon_1370f636d64fd4310217be9a8bb5fef7);
+        
+    
+        var popup_d7042139486a577c6a8f942ccb0592cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df2dbf0de33c5abbff778de2d01c17ca = $(`<div id="html_df2dbf0de33c5abbff778de2d01c17ca" style="width: 100.0%; height: 100.0%;">Anacortes: Earthquakes over magnitude 4.5</div>`)[0];
+                popup_d7042139486a577c6a8f942ccb0592cc.setContent(html_df2dbf0de33c5abbff778de2d01c17ca);
+            
+        
+
+        marker_7922349dffc5a75b3017bce70d0e23c0.bindPopup(popup_d7042139486a577c6a8f942ccb0592cc)
+        ;
+
+        
+    
+    
+            var marker_ac68616c5759feff3c6799c5ac507331 = L.marker(
+                [47.7, -122.7],
+                {}
+            ).addTo(map_53acb47c67f3e85171b664812dcbbfbd);
+        
+    
+            var icon_6a0f83688f9d8dc9bec29a968df026ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ac68616c5759feff3c6799c5ac507331.setIcon(icon_6a0f83688f9d8dc9bec29a968df026ae);
+        
+    
+        var popup_88c7b18f2450e769b054caf7f529302c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_314a5a309fbbc5b3e711dc4a312066a4 = $(`<div id="html_314a5a309fbbc5b3e711dc4a312066a4" style="width: 100.0%; height: 100.0%;">Bangor Trident Base: Earthquakes over magnitude 4.5</div>`)[0];
+                popup_88c7b18f2450e769b054caf7f529302c.setContent(html_314a5a309fbbc5b3e711dc4a312066a4);
+            
+        
+
+        marker_ac68616c5759feff3c6799c5ac507331.bindPopup(popup_88c7b18f2450e769b054caf7f529302c)
+        ;
+
+        
+    
+    
+            var marker_5ffcf68d476b7b195d759fc3fc86dd04 = L.marker(
+                [49.0, -122.7],
+                {}
+            ).addTo(map_53acb47c67f3e85171b664812dcbbfbd);
+        
+    
+            var icon_24120214e897f3f24dbd174957dfbd9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5ffcf68d476b7b195d759fc3fc86dd04.setIcon(icon_24120214e897f3f24dbd174957dfbd9b);
+        
+    
+        var popup_01ceffb672c80d378d2cfb346ac8eff7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2cfc38d0894ce1fcb9e8ff0691cc5d8d = $(`<div id="html_2cfc38d0894ce1fcb9e8ff0691cc5d8d" style="width: 100.0%; height: 100.0%;">Blaine: Earthquakes over magnitude 4.5</div>`)[0];
+                popup_01ceffb672c80d378d2cfb346ac8eff7.setContent(html_2cfc38d0894ce1fcb9e8ff0691cc5d8d);
+            
+        
+
+        marker_5ffcf68d476b7b195d759fc3fc86dd04.bindPopup(popup_01ceffb672c80d378d2cfb346ac8eff7)
+        ;
+
+        
+    
+    
+            var marker_dea8917ac8e23b79339b09f16169b262 = L.marker(
+                [47.6705, -123.25],
+                {}
+            ).addTo(map_53acb47c67f3e85171b664812dcbbfbd);
+        
+    
+            var icon_a2e5860b17ec8b7218e52c126811bdd9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dea8917ac8e23b79339b09f16169b262.setIcon(icon_a2e5860b17ec8b7218e52c126811bdd9);
+        
+    
+        var popup_28f61c92401bca5400c22207681014ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3575fc5c9465f2d86b09cfb2ea30d97e = $(`<div id="html_3575fc5c9465f2d86b09cfb2ea30d97e" style="width: 100.0%; height: 100.0%;">Brinnon: Earthquakes over magnitude 4.5</div>`)[0];
+                popup_28f61c92401bca5400c22207681014ec.setContent(html_3575fc5c9465f2d86b09cfb2ea30d97e);
+            
+        
+
+        marker_dea8917ac8e23b79339b09f16169b262.bindPopup(popup_28f61c92401bca5400c22207681014ec)
+        ;
+
+        
+    
+    
+            var marker_b93533aef93537aad9f699f766cff21e = L.marker(
+                [47.288, -122.406],
+                {}
+            ).addTo(map_53acb47c67f3e85171b664812dcbbfbd);
+        
+    
+            var icon_a22f4c33b3e298d456a876bd6d026701 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b93533aef93537aad9f699f766cff21e.setIcon(icon_a22f4c33b3e298d456a876bd6d026701);
+        
+    
+        var popup_f3b2455f151dfb524722584742781a5a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_337cee63f04a54c7705175696118f0d5 = $(`<div id="html_337cee63f04a54c7705175696118f0d5" style="width: 100.0%; height: 100.0%;">Browns Point: Earthquakes over magnitude 4.5</div>`)[0];
+                popup_f3b2455f151dfb524722584742781a5a.setContent(html_337cee63f04a54c7705175696118f0d5);
+            
+        
+
+        marker_b93533aef93537aad9f699f766cff21e.bindPopup(popup_f3b2455f151dfb524722584742781a5a)
+        ;
+
+        
+    
+    
+            var marker_fd2092eabb1cb4077648bc5968ca58c6 = L.marker(
+                [47.42, -122.7095],
+                {}
+            ).addTo(map_53acb47c67f3e85171b664812dcbbfbd);
+        
+    
+            var icon_b9d871b384d22b074229e8c84b68f1ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fd2092eabb1cb4077648bc5968ca58c6.setIcon(icon_b9d871b384d22b074229e8c84b68f1ce);
+        
+    
+        var popup_984162ed6455a36efd098f1d3d386499 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_efdc7bda354307e8e12875aa24ac5ba2 = $(`<div id="html_efdc7bda354307e8e12875aa24ac5ba2" style="width: 100.0%; height: 100.0%;">Burley: Earthquakes over magnitude 4.5</div>`)[0];
+                popup_984162ed6455a36efd098f1d3d386499.setContent(html_efdc7bda354307e8e12875aa24ac5ba2);
+            
+        
+
+        marker_fd2092eabb1cb4077648bc5968ca58c6.bindPopup(popup_984162ed6455a36efd098f1d3d386499)
+        ;
+
+        
+    
+    
+            var marker_3b1049e2973131061a10e05bcd7ef8c5 = L.marker(
+                [48.333, -122.433],
+                {}
+            ).addTo(map_53acb47c67f3e85171b664812dcbbfbd);
+        
+    
+            var icon_1e265c91b707411952b01446561d6808 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3b1049e2973131061a10e05bcd7ef8c5.setIcon(icon_1e265c91b707411952b01446561d6808);
+        
+    
+        var popup_916623c6e6b74718edd9c91f971a1a85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35ea1074d812caecdec48006d4f777c7 = $(`<div id="html_35ea1074d812caecdec48006d4f777c7" style="width: 100.0%; height: 100.0%;">Conway: Earthquakes over magnitude 4.5</div>`)[0];
+                popup_916623c6e6b74718edd9c91f971a1a85.setContent(html_35ea1074d812caecdec48006d4f777c7);
+            
+        
+
+        marker_3b1049e2973131061a10e05bcd7ef8c5.bindPopup(popup_916623c6e6b74718edd9c91f971a1a85)
+        ;
+
+        
+    
+    
+            var marker_8f6fbba814b93dcc81bceca844fea279 = L.marker(
+                [48.1925, -122.7675],
+                {}
+            ).addTo(map_53acb47c67f3e85171b664812dcbbfbd);
+        
+    
+            var icon_f2f6d6b3281d847d931f389f0ac51b18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8f6fbba814b93dcc81bceca844fea279.setIcon(icon_f2f6d6b3281d847d931f389f0ac51b18);
+        
+    
+        var popup_b7d16fb85efeafde85ec0eb9aaa50a10 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b1d6a3c1d3ab254a8d70cee590a8c615 = $(`<div id="html_b1d6a3c1d3ab254a8d70cee590a8c615" style="width: 100.0%; height: 100.0%;">Coupeville: Earthquakes over magnitude 4.5</div>`)[0];
+                popup_b7d16fb85efeafde85ec0eb9aaa50a10.setContent(html_b1d6a3c1d3ab254a8d70cee590a8c615);
+            
+        
+
+        marker_8f6fbba814b93dcc81bceca844fea279.bindPopup(popup_b7d16fb85efeafde85ec0eb9aaa50a10)
+        ;
+
+        
+    
+    
+            var marker_d5b3ba443ca53f33b7e155278c5375a2 = L.marker(
+                [49.0, -122.6],
+                {}
+            ).addTo(map_53acb47c67f3e85171b664812dcbbfbd);
+        
+    
+            var icon_bf61e551bd4b21a3c65c940af5586d07 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d5b3ba443ca53f33b7e155278c5375a2.setIcon(icon_bf61e551bd4b21a3c65c940af5586d07);
+        
+    
+        var popup_8d64b0596849f47da0e23b90200b3b9a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3bc13b795d43fc1f659dbe72e9726141 = $(`<div id="html_3bc13b795d43fc1f659dbe72e9726141" style="width: 100.0%; height: 100.0%;">Custer: Earthquakes over magnitude 4.5</div>`)[0];
+                popup_8d64b0596849f47da0e23b90200b3b9a.setContent(html_3bc13b795d43fc1f659dbe72e9726141);
+            
+        
+
+        marker_d5b3ba443ca53f33b7e155278c5375a2.bindPopup(popup_8d64b0596849f47da0e23b90200b3b9a)
+        ;
+
+        
+    
+    
+            var marker_b2a107697387c2fa1cb5b5e8e5224255 = L.marker(
+                [48.845, -122.1605],
+                {}
+            ).addTo(map_53acb47c67f3e85171b664812dcbbfbd);
+        
+    
+            var icon_f07cb14d3a8db8f826ca9ddc195e13b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b2a107697387c2fa1cb5b5e8e5224255.setIcon(icon_f07cb14d3a8db8f826ca9ddc195e13b7);
+        
+    
+        var popup_6d411a1210f2b3418d7db8ec84755df8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57d8e2b3b53c20760a5d3ada4726f106 = $(`<div id="html_57d8e2b3b53c20760a5d3ada4726f106" style="width: 100.0%; height: 100.0%;">Deming: Earthquakes over magnitude 4.5</div>`)[0];
+                popup_6d411a1210f2b3418d7db8ec84755df8.setContent(html_57d8e2b3b53c20760a5d3ada4726f106);
+            
+        
+
+        marker_b2a107697387c2fa1cb5b5e8e5224255.bindPopup(popup_6d411a1210f2b3418d7db8ec84755df8)
+        ;
+
+        
+    
+    
+            var marker_0a03d38dbdc8b06f7a1bc27cdd5cf23b = L.marker(
+                [47.3866667, -122.3638333],
+                {}
+            ).addTo(map_53acb47c67f3e85171b664812dcbbfbd);
+        
+    
+            var icon_b3c882a01c21e3ad393c8a6b03e7e586 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0a03d38dbdc8b06f7a1bc27cdd5cf23b.setIcon(icon_b3c882a01c21e3ad393c8a6b03e7e586);
+        
+    
+        var popup_c8125b8ec3eb3e10425d16d12856a650 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0cb289b8571ca9c33629a2862334865c = $(`<div id="html_0cb289b8571ca9c33629a2862334865c" style="width: 100.0%; height: 100.0%;">Des Moines: Earthquakes over magnitude 4.5</div>`)[0];
+                popup_c8125b8ec3eb3e10425d16d12856a650.setContent(html_0cb289b8571ca9c33629a2862334865c);
+            
+        
+
+        marker_0a03d38dbdc8b06f7a1bc27cdd5cf23b.bindPopup(popup_c8125b8ec3eb3e10425d16d12856a650)
+        ;
+
+        
+    
+    
+            var marker_e79393b64f2d237058f7fe4635324e3b = L.marker(
+                [47.5983333, -122.5703333],
+                {}
+            ).addTo(map_53acb47c67f3e85171b664812dcbbfbd);
+        
+    
+            var icon_73f093aaf2ac462f5b2a35f43312bd19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e79393b64f2d237058f7fe4635324e3b.setIcon(icon_73f093aaf2ac462f5b2a35f43312bd19);
+        
+    
+        var popup_1bceb20866737ac27115ab62ca7170ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1e5725b6bf83d328304719119d32b62 = $(`<div id="html_f1e5725b6bf83d328304719119d32b62" style="width: 100.0%; height: 100.0%;">Enetai: Earthquakes over magnitude 4.5</div>`)[0];
+                popup_1bceb20866737ac27115ab62ca7170ba.setContent(html_f1e5725b6bf83d328304719119d32b62);
+            
+        
+
+        marker_e79393b64f2d237058f7fe4635324e3b.bindPopup(popup_1bceb20866737ac27115ab62ca7170ba)
+        ;
+
+        
+    
+    
+            var marker_03540dfa4c635b2ddeb9b35a0ff4d0e2 = L.marker(
+                [45.683, -122.267],
+                {}
+            ).addTo(map_53acb47c67f3e85171b664812dcbbfbd);
+        
+    
+            var icon_4b91e4aab7623635b156f246fde1b304 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_03540dfa4c635b2ddeb9b35a0ff4d0e2.setIcon(icon_4b91e4aab7623635b156f246fde1b304);
+        
+    
+        var popup_380f67e29935437c0c870bdc34a15d8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6adc3ead17a466a65834f864fbb4bfa5 = $(`<div id="html_6adc3ead17a466a65834f864fbb4bfa5" style="width: 100.0%; height: 100.0%;">Fern Prairie: Earthquakes over magnitude 4.5</div>`)[0];
+                popup_380f67e29935437c0c870bdc34a15d8f.setContent(html_6adc3ead17a466a65834f864fbb4bfa5);
+            
+        
+
+        marker_03540dfa4c635b2ddeb9b35a0ff4d0e2.bindPopup(popup_380f67e29935437c0c870bdc34a15d8f)
+        ;
+
+        
+    
+    
+            var marker_21dfb5ce36e148bd96eb5d556db03a1a = L.marker(
+                [48.4, -122.9],
+                {}
+            ).addTo(map_53acb47c67f3e85171b664812dcbbfbd);
+        
+    
+            var icon_30a90bf0f70d45efbf36170b700b02d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_21dfb5ce36e148bd96eb5d556db03a1a.setIcon(icon_30a90bf0f70d45efbf36170b700b02d5);
+        
+    
+        var popup_18b78d058f2984ad1dd747e06e51e3e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_60772da17ee4ac97ec4478f31efcdc04 = $(`<div id="html_60772da17ee4ac97ec4478f31efcdc04" style="width: 100.0%; height: 100.0%;">Friday Harbor: Earthquakes over magnitude 4.5</div>`)[0];
+                popup_18b78d058f2984ad1dd747e06e51e3e1.setContent(html_60772da17ee4ac97ec4478f31efcdc04);
+            
+        
+
+        marker_21dfb5ce36e148bd96eb5d556db03a1a.bindPopup(popup_18b78d058f2984ad1dd747e06e51e3e1)
+        ;
+
+        
+    
+    
+            var marker_437aa00c4a7aabe3e1b9f97b52cf3a56 = L.marker(
+                [46.031, -118.429],
+                {}
+            ).addTo(map_53acb47c67f3e85171b664812dcbbfbd);
+        
+    
+            var icon_2716edb58eb79173b5e44edbc8533913 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_437aa00c4a7aabe3e1b9f97b52cf3a56.setIcon(icon_2716edb58eb79173b5e44edbc8533913);
+        
+    
+        var popup_72c1e1e3c1ee375564002710784b6a0b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee3c8b252cf8bba299b9453926dadbd7 = $(`<div id="html_ee3c8b252cf8bba299b9453926dadbd7" style="width: 100.0%; height: 100.0%;">Garrett: Earthquakes over magnitude 4.5</div>`)[0];
+                popup_72c1e1e3c1ee375564002710784b6a0b.setContent(html_ee3c8b252cf8bba299b9453926dadbd7);
+            
+        
+
+        marker_437aa00c4a7aabe3e1b9f97b52cf3a56.bindPopup(popup_72c1e1e3c1ee375564002710784b6a0b)
+        ;
+
+        
+    
+    
+            var marker_c255123c598645291784f4ab94eb4ec7 = L.marker(
+                [47.75541665, -121.85300000000001],
+                {}
+            ).addTo(map_53acb47c67f3e85171b664812dcbbfbd);
+        
+    
+            var icon_95235bd26b8cd787f88360a2d61b7a03 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c255123c598645291784f4ab94eb4ec7.setIcon(icon_95235bd26b8cd787f88360a2d61b7a03);
+        
+    
+        var popup_904976936ba3a45ba04162ad40ae3f3d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54e28b532873142c6e12904a8a375739 = $(`<div id="html_54e28b532873142c6e12904a8a375739" style="width: 100.0%; height: 100.0%;">Lake Marcel-Stillwater: Earthquakes over magnitude 4.5</div>`)[0];
+                popup_904976936ba3a45ba04162ad40ae3f3d.setContent(html_54e28b532873142c6e12904a8a375739);
+            
+        
+
+        marker_c255123c598645291784f4ab94eb4ec7.bindPopup(popup_904976936ba3a45ba04162ad40ae3f3d)
+        ;
+
+        
+    
+    
+            var marker_03ba52a06d09ae6d89efbd708e90fb84 = L.marker(
+                [47.7865, -122.5846667],
+                {}
+            ).addTo(map_53acb47c67f3e85171b664812dcbbfbd);
+        
+    
+            var icon_84d022c4eef205a8e0098da6c56d7374 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_03ba52a06d09ae6d89efbd708e90fb84.setIcon(icon_84d022c4eef205a8e0098da6c56d7374);
+        
+    
+        var popup_ecfacbfcf841f17b16b1865de76159dd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97f43423ad86c8b8656306ef8f617d78 = $(`<div id="html_97f43423ad86c8b8656306ef8f617d78" style="width: 100.0%; height: 100.0%;">Lofall: Earthquakes over magnitude 4.5</div>`)[0];
+                popup_ecfacbfcf841f17b16b1865de76159dd.setContent(html_97f43423ad86c8b8656306ef8f617d78);
+            
+        
+
+        marker_03ba52a06d09ae6d89efbd708e90fb84.bindPopup(popup_ecfacbfcf841f17b16b1865de76159dd)
+        ;
+
+        
+    
+    
+            var marker_c4ebda2d3b6a15a9656b30983d6343a7 = L.marker(
+                [47.149, -122.7266667],
+                {}
+            ).addTo(map_53acb47c67f3e85171b664812dcbbfbd);
+        
+    
+            var icon_8046f367772b06458c7209c2b8960ed8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c4ebda2d3b6a15a9656b30983d6343a7.setIcon(icon_8046f367772b06458c7209c2b8960ed8);
+        
+    
+        var popup_3cf86e31557273566e675ed97f8d3127 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a020b50b5a65afdd59fd2f5447a4569 = $(`<div id="html_5a020b50b5a65afdd59fd2f5447a4569" style="width: 100.0%; height: 100.0%;">Longbranch: Earthquakes over magnitude 4.5</div>`)[0];
+                popup_3cf86e31557273566e675ed97f8d3127.setContent(html_5a020b50b5a65afdd59fd2f5447a4569);
+            
+        
+
+        marker_c4ebda2d3b6a15a9656b30983d6343a7.bindPopup(popup_3cf86e31557273566e675ed97f8d3127)
+        ;
+
+        
+    
+    
+            var marker_326c8b656f693b2d6bdc1e491168b4c4 = L.marker(
+                [48.0, -122.0],
+                {}
+            ).addTo(map_53acb47c67f3e85171b664812dcbbfbd);
+        
+    
+            var icon_312986edfbfc8c56f76a600d0ca6f2d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_326c8b656f693b2d6bdc1e491168b4c4.setIcon(icon_312986edfbfc8c56f76a600d0ca6f2d8);
+        
+    
+        var popup_7d42d1382c589b0f46bfc1f98668d1e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f64bb4797545c79612d5e863b256174d = $(`<div id="html_f64bb4797545c79612d5e863b256174d" style="width: 100.0%; height: 100.0%;">Machias: Earthquakes over magnitude 4.5</div>`)[0];
+                popup_7d42d1382c589b0f46bfc1f98668d1e4.setContent(html_f64bb4797545c79612d5e863b256174d);
+            
+        
+
+        marker_326c8b656f693b2d6bdc1e491168b4c4.bindPopup(popup_7d42d1382c589b0f46bfc1f98668d1e4)
+        ;
+
+        
+    
+    
+            var marker_e33793d29498ffac52c3bc7c1e88d09f = L.marker(
+                [48.3635, -119.8881667],
+                {}
+            ).addTo(map_53acb47c67f3e85171b664812dcbbfbd);
+        
+    
+            var icon_33e5b61772d53340f141eeb87dc64771 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e33793d29498ffac52c3bc7c1e88d09f.setIcon(icon_33e5b61772d53340f141eeb87dc64771);
+        
+    
+        var popup_e514772cded041d83eb643b6d2568a2d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6f6366d540660196d8d92e33e17800f = $(`<div id="html_b6f6366d540660196d8d92e33e17800f" style="width: 100.0%; height: 100.0%;">Malott: Earthquakes over magnitude 4.5</div>`)[0];
+                popup_e514772cded041d83eb643b6d2568a2d.setContent(html_b6f6366d540660196d8d92e33e17800f);
+            
+        
+
+        marker_e33793d29498ffac52c3bc7c1e88d09f.bindPopup(popup_e514772cded041d83eb643b6d2568a2d)
+        ;
+
+        
+    
+    
+            var marker_55320091cbe7bf9510214b7706f5331a = L.marker(
+                [48.5, -121.4],
+                {}
+            ).addTo(map_53acb47c67f3e85171b664812dcbbfbd);
+        
+    
+            var icon_a431ce5edb0dad6bde9f883df702e8ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_55320091cbe7bf9510214b7706f5331a.setIcon(icon_a431ce5edb0dad6bde9f883df702e8ac);
+        
+    
+        var popup_afb59c0dfd1bf098d3af3b690965b52e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_727f7af6dc6530db4fc27de9885deedf = $(`<div id="html_727f7af6dc6530db4fc27de9885deedf" style="width: 100.0%; height: 100.0%;">Marblemount: Earthquakes over magnitude 4.5</div>`)[0];
+                popup_afb59c0dfd1bf098d3af3b690965b52e.setContent(html_727f7af6dc6530db4fc27de9885deedf);
+            
+        
+
+        marker_55320091cbe7bf9510214b7706f5331a.bindPopup(popup_afb59c0dfd1bf098d3af3b690965b52e)
+        ;
+
+        
+    
+    
+            var marker_cdd1c394ae6b1965db2c09e53df0376f = L.marker(
+                [46.65, -122.1161667],
+                {}
+            ).addTo(map_53acb47c67f3e85171b664812dcbbfbd);
+        
+    
+            var icon_e2f0b78423d385f1d1ae7c1180a68f1b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cdd1c394ae6b1965db2c09e53df0376f.setIcon(icon_e2f0b78423d385f1d1ae7c1180a68f1b);
+        
+    
+        var popup_ba6aebe6b9b299877071eb2bc488fd88 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a33eb9ace55eb0c7cea2ad22ab8cf91e = $(`<div id="html_a33eb9ace55eb0c7cea2ad22ab8cf91e" style="width: 100.0%; height: 100.0%;">Mineral: Earthquakes over magnitude 4.5</div>`)[0];
+                popup_ba6aebe6b9b299877071eb2bc488fd88.setContent(html_a33eb9ace55eb0c7cea2ad22ab8cf91e);
+            
+        
+
+        marker_cdd1c394ae6b1965db2c09e53df0376f.bindPopup(popup_ba6aebe6b9b299877071eb2bc488fd88)
+        ;
+
+        
+    
+    
+            var marker_eb9d780797b4ce304dfec48749bb7278 = L.marker(
+                [46.21980476571429, -122.18349047428572],
+                {}
+            ).addTo(map_53acb47c67f3e85171b664812dcbbfbd);
+        
+    
+            var icon_384a3fe20186cc6a2b1c9d77a6aefda3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_eb9d780797b4ce304dfec48749bb7278.setIcon(icon_384a3fe20186cc6a2b1c9d77a6aefda3);
+        
+    
+        var popup_6bdb23f6a0cdec68edffbbc41cd8954f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a12bed1a17646552bb569829489b8ee9 = $(`<div id="html_a12bed1a17646552bb569829489b8ee9" style="width: 100.0%; height: 100.0%;">Morton: Earthquakes over magnitude 4.5</div>`)[0];
+                popup_6bdb23f6a0cdec68edffbbc41cd8954f.setContent(html_a12bed1a17646552bb569829489b8ee9);
+            
+        
+
+        marker_eb9d780797b4ce304dfec48749bb7278.bindPopup(popup_6bdb23f6a0cdec68edffbbc41cd8954f)
+        ;
+
+        
+    
+    
+            var marker_c76a8a827e3a029df55e9d27facb286a = L.marker(
+                [46.60954165, -121.504541675],
+                {}
+            ).addTo(map_53acb47c67f3e85171b664812dcbbfbd);
+        
+    
+            var icon_88f492ec3fd7e8bc23aeff7e755df6c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c76a8a827e3a029df55e9d27facb286a.setIcon(icon_88f492ec3fd7e8bc23aeff7e755df6c2);
+        
+    
+        var popup_946847a3fb7f186441a502faa1a446a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e8dc51eb3286fcd556576e36d995cc96 = $(`<div id="html_e8dc51eb3286fcd556576e36d995cc96" style="width: 100.0%; height: 100.0%;">Packwood: Earthquakes over magnitude 4.5</div>`)[0];
+                popup_946847a3fb7f186441a502faa1a446a8.setContent(html_e8dc51eb3286fcd556576e36d995cc96);
+            
+        
+
+        marker_c76a8a827e3a029df55e9d27facb286a.bindPopup(popup_946847a3fb7f186441a502faa1a446a8)
+        ;
+
+        
+    
+    
+            var marker_8b732064c5215bba49571c971e84966b = L.marker(
+                [48.8, -123.0],
+                {}
+            ).addTo(map_53acb47c67f3e85171b664812dcbbfbd);
+        
+    
+            var icon_983160e9bcdc30c6a66329478d305eb8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8b732064c5215bba49571c971e84966b.setIcon(icon_983160e9bcdc30c6a66329478d305eb8);
+        
+    
+        var popup_64fcb80c4314f98b9ac3e3b587d0c70d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7047a21951f2752504235d2f7f34617c = $(`<div id="html_7047a21951f2752504235d2f7f34617c" style="width: 100.0%; height: 100.0%;">Point Roberts: Earthquakes over magnitude 4.5</div>`)[0];
+                popup_64fcb80c4314f98b9ac3e3b587d0c70d.setContent(html_7047a21951f2752504235d2f7f34617c);
+            
+        
+
+        marker_8b732064c5215bba49571c971e84966b.bindPopup(popup_64fcb80c4314f98b9ac3e3b587d0c70d)
+        ;
+
+        
+    
+    
+            var marker_bdf304262e0ab11f67fc68e429511018 = L.marker(
+                [48.4693333, -119.6075],
+                {}
+            ).addTo(map_53acb47c67f3e85171b664812dcbbfbd);
+        
+    
+            var icon_6680fcea7473a3f8b084c0c34d60994b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bdf304262e0ab11f67fc68e429511018.setIcon(icon_6680fcea7473a3f8b084c0c34d60994b);
+        
+    
+        var popup_76d0ff6ff637fe0b7d1ef961ea1afeaf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bbd7882f13d36c79128759174dd74f72 = $(`<div id="html_bbd7882f13d36c79128759174dd74f72" style="width: 100.0%; height: 100.0%;">Riverside: Earthquakes over magnitude 4.5</div>`)[0];
+                popup_76d0ff6ff637fe0b7d1ef961ea1afeaf.setContent(html_bbd7882f13d36c79128759174dd74f72);
+            
+        
+
+        marker_bdf304262e0ab11f67fc68e429511018.bindPopup(popup_76d0ff6ff637fe0b7d1ef961ea1afeaf)
+        ;
+
+        
+    
+    
+            var marker_25a1bb8afd5f01bc91f691c1529030ac = L.marker(
+                [47.8728333333333, -122.016333333333],
+                {}
+            ).addTo(map_53acb47c67f3e85171b664812dcbbfbd);
+        
+    
+            var icon_b1bd2e6b25150d08b10a9c7a15c46a14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_25a1bb8afd5f01bc91f691c1529030ac.setIcon(icon_b1bd2e6b25150d08b10a9c7a15c46a14);
+        
+    
+        var popup_80df72ad2e035331e3283a8d5d2f95d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18eace20e37f5056c34a1f9f1118958b = $(`<div id="html_18eace20e37f5056c34a1f9f1118958b" style="width: 100.0%; height: 100.0%;">Roosevelt: Earthquakes over magnitude 4.5</div>`)[0];
+                popup_80df72ad2e035331e3283a8d5d2f95d1.setContent(html_18eace20e37f5056c34a1f9f1118958b);
+            
+        
+
+        marker_25a1bb8afd5f01bc91f691c1529030ac.bindPopup(popup_80df72ad2e035331e3283a8d5d2f95d1)
+        ;
+
+        
+    
+    
+            var marker_17fa37de8973ce3b396810dcdde8bbd1 = L.marker(
+                [47.014, -122.597],
+                {}
+            ).addTo(map_53acb47c67f3e85171b664812dcbbfbd);
+        
+    
+            var icon_15d783ad70cac544d9faa0e1b7761b60 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_17fa37de8973ce3b396810dcdde8bbd1.setIcon(icon_15d783ad70cac544d9faa0e1b7761b60);
+        
+    
+        var popup_9090dff519f3d151d5eeb992a62458e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5338859d82e7bb3b9829805c2d867e26 = $(`<div id="html_5338859d82e7bb3b9829805c2d867e26" style="width: 100.0%; height: 100.0%;">Roy: Earthquakes over magnitude 4.5</div>`)[0];
+                popup_9090dff519f3d151d5eeb992a62458e9.setContent(html_5338859d82e7bb3b9829805c2d867e26);
+            
+        
+
+        marker_17fa37de8973ce3b396810dcdde8bbd1.bindPopup(popup_9090dff519f3d151d5eeb992a62458e9)
+        ;
+
+        
+    
+    
+            var marker_26c50e7a6d73c965553d12f9eb193ddb = L.marker(
+                [47.12075, -123.48308335],
+                {}
+            ).addTo(map_53acb47c67f3e85171b664812dcbbfbd);
+        
+    
+            var icon_4612282adc076160e251718dbf671f79 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_26c50e7a6d73c965553d12f9eb193ddb.setIcon(icon_4612282adc076160e251718dbf671f79);
+        
+    
+        var popup_56fefe2de0cee98611553828e7d56dc0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_43edfd007c77813c95e8d7c915616c46 = $(`<div id="html_43edfd007c77813c95e8d7c915616c46" style="width: 100.0%; height: 100.0%;">Satsop: Earthquakes over magnitude 4.5</div>`)[0];
+                popup_56fefe2de0cee98611553828e7d56dc0.setContent(html_43edfd007c77813c95e8d7c915616c46);
+            
+        
+
+        marker_26c50e7a6d73c965553d12f9eb193ddb.bindPopup(popup_56fefe2de0cee98611553828e7d56dc0)
+        ;
+
+        
+    
+    
+            var marker_24d76b8031278e90f6f1713da24ec757 = L.marker(
+                [47.1, -122.0],
+                {}
+            ).addTo(map_53acb47c67f3e85171b664812dcbbfbd);
+        
+    
+            var icon_63f6879f6af19aa8abbead8957341d2f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_24d76b8031278e90f6f1713da24ec757.setIcon(icon_63f6879f6af19aa8abbead8957341d2f);
+        
+    
+        var popup_f897503d69a64fc5d8a3b4f9fcc9dafa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8378ddf3ca7065bd140b43b485b569b8 = $(`<div id="html_8378ddf3ca7065bd140b43b485b569b8" style="width: 100.0%; height: 100.0%;">Wilkeson: Earthquakes over magnitude 4.5</div>`)[0];
+                popup_f897503d69a64fc5d8a3b4f9fcc9dafa.setContent(html_8378ddf3ca7065bd140b43b485b569b8);
+            
+        
+
+        marker_24d76b8031278e90f6f1713da24ec757.bindPopup(popup_f897503d69a64fc5d8a3b4f9fcc9dafa)
+        ;
+
+        
+    
+    
+            var marker_a8cbf0e6871551b5e2668f68d4eae52a = L.marker(
+                [46.011, -122.128],
+                {}
+            ).addTo(map_53acb47c67f3e85171b664812dcbbfbd);
+        
+    
+            var icon_1f867607475beee5bc2427614abedb0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a8cbf0e6871551b5e2668f68d4eae52a.setIcon(icon_1f867607475beee5bc2427614abedb0a);
+        
+    
+        var popup_5cd619257d3a8579dc42612c69fc59d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f21cb57136207f70a311dee013e94991 = $(`<div id="html_f21cb57136207f70a311dee013e94991" style="width: 100.0%; height: 100.0%;">Yacolt: Earthquakes over magnitude 4.5</div>`)[0];
+                popup_5cd619257d3a8579dc42612c69fc59d8.setContent(html_f21cb57136207f70a311dee013e94991);
+            
+        
+
+        marker_a8cbf0e6871551b5e2668f68d4eae52a.bindPopup(popup_5cd619257d3a8579dc42612c69fc59d8)
+        ;
+
+        
+    
+</script>
+</html>

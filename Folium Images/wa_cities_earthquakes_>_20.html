@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ba1755bd54d8efd740c6581d80bfbe9e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+             <h3 align="center" style="font-size:20px"><b>Washington Cities with more than 20 Earthquakes</b></h3>
+             
+    
+            <div class="folium-map" id="map_ba1755bd54d8efd740c6581d80bfbe9e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ba1755bd54d8efd740c6581d80bfbe9e = L.map(
+                "map_ba1755bd54d8efd740c6581d80bfbe9e",
+                {
+                    center: [47.3511, -120.7401],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_73ba66c4d9ff52d426e655a0891f9907 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ba1755bd54d8efd740c6581d80bfbe9e);
+        
+    
+            var marker_767d8c66a191f85f3b1ddf8abe1cdc15 = L.marker(
+                [46.197328171536206, -122.19000210756244],
+                {}
+            ).addTo(map_ba1755bd54d8efd740c6581d80bfbe9e);
+        
+    
+            var icon_0aace378aeb7e7cd870a6fabcb709394 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_767d8c66a191f85f3b1ddf8abe1cdc15.setIcon(icon_0aace378aeb7e7cd870a6fabcb709394);
+        
+    
+        var popup_b02d58f8e2456126d49c14762ec13870 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e33accf361d01ad69b8de9c78c1d8764 = $(`<div id="html_e33accf361d01ad69b8de9c78c1d8764" style="width: 100.0%; height: 100.0%;">Amboy: 2389 earthquakes</div>`)[0];
+                popup_b02d58f8e2456126d49c14762ec13870.setContent(html_e33accf361d01ad69b8de9c78c1d8764);
+            
+        
+
+        marker_767d8c66a191f85f3b1ddf8abe1cdc15.bindPopup(popup_b02d58f8e2456126d49c14762ec13870)
+        ;
+
+        
+    
+    
+            var marker_2422bd3656afb85f55cb4b9192bf19ca = L.marker(
+                [46.83947943251029, -121.86306584238682],
+                {}
+            ).addTo(map_ba1755bd54d8efd740c6581d80bfbe9e);
+        
+    
+            var icon_b55ccce2c196712064af76dbb799c5da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2422bd3656afb85f55cb4b9192bf19ca.setIcon(icon_b55ccce2c196712064af76dbb799c5da);
+        
+    
+        var popup_ea3ce7a439379887d1caffa728d772bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_503ea8782ee5f0445fd70b7217e4d60d = $(`<div id="html_503ea8782ee5f0445fd70b7217e4d60d" style="width: 100.0%; height: 100.0%;">Ashford: 81 earthquakes</div>`)[0];
+                popup_ea3ce7a439379887d1caffa728d772bd.setContent(html_503ea8782ee5f0445fd70b7217e4d60d);
+            
+        
+
+        marker_2422bd3656afb85f55cb4b9192bf19ca.bindPopup(popup_ea3ce7a439379887d1caffa728d772bd)
+        ;
+
+        
+    
+    
+            var marker_3d782b0fdeb37f0d65d22ec9da7c6401 = L.marker(
+                [47.66554347391305, -123.07078261304348],
+                {}
+            ).addTo(map_ba1755bd54d8efd740c6581d80bfbe9e);
+        
+    
+            var icon_fbdffa8f36859b184a65234c0d9bd5e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3d782b0fdeb37f0d65d22ec9da7c6401.setIcon(icon_fbdffa8f36859b184a65234c0d9bd5e5);
+        
+    
+        var popup_eea1a30c76276dd8511b1a9b5b2cbcc7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7104b9c9b72dc9d64b8a216cb43deba = $(`<div id="html_c7104b9c9b72dc9d64b8a216cb43deba" style="width: 100.0%; height: 100.0%;">Brinnon: 23 earthquakes</div>`)[0];
+                popup_eea1a30c76276dd8511b1a9b5b2cbcc7.setContent(html_c7104b9c9b72dc9d64b8a216cb43deba);
+            
+        
+
+        marker_3d782b0fdeb37f0d65d22ec9da7c6401.bindPopup(popup_eea1a30c76276dd8511b1a9b5b2cbcc7)
+        ;
+
+        
+    
+    
+            var marker_ea85980b53eeeab0bef657f836046a14 = L.marker(
+                [48.21249275217391, -121.46170289710143],
+                {}
+            ).addTo(map_ba1755bd54d8efd740c6581d80bfbe9e);
+        
+    
+            var icon_53f76720c54602b3febc274df5dee91a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ea85980b53eeeab0bef657f836046a14.setIcon(icon_53f76720c54602b3febc274df5dee91a);
+        
+    
+        var popup_a328cff2f1930a7b6035a99fe8b6aa4e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a61d8965f0d524f336fe9493df8f8dd = $(`<div id="html_6a61d8965f0d524f336fe9493df8f8dd" style="width: 100.0%; height: 100.0%;">Darrington: 23 earthquakes</div>`)[0];
+                popup_a328cff2f1930a7b6035a99fe8b6aa4e.setContent(html_6a61d8965f0d524f336fe9493df8f8dd);
+            
+        
+
+        marker_ea85980b53eeeab0bef657f836046a14.bindPopup(popup_a328cff2f1930a7b6035a99fe8b6aa4e)
+        ;
+
+        
+    
+    
+            var marker_d58552dd5389a407a7868118d1b2be64 = L.marker(
+                [48.83051388958333, -122.16072221875],
+                {}
+            ).addTo(map_ba1755bd54d8efd740c6581d80bfbe9e);
+        
+    
+            var icon_1f89127f784620b278ae7895edea1ee7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d58552dd5389a407a7868118d1b2be64.setIcon(icon_1f89127f784620b278ae7895edea1ee7);
+        
+    
+        var popup_ed6d267c2bed75fc0b08757be2d46265 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_710050c184c605b0ae4aa9dd85f592e2 = $(`<div id="html_710050c184c605b0ae4aa9dd85f592e2" style="width: 100.0%; height: 100.0%;">Deming: 48 earthquakes</div>`)[0];
+                popup_ed6d267c2bed75fc0b08757be2d46265.setContent(html_710050c184c605b0ae4aa9dd85f592e2);
+            
+        
+
+        marker_d58552dd5389a407a7868118d1b2be64.bindPopup(popup_ed6d267c2bed75fc0b08757be2d46265)
+        ;
+
+        
+    
+    
+            var marker_9a9eb5f98a045530d87ae25cd3f7f51e = L.marker(
+                [47.68724073950617, -120.25469444876543],
+                {}
+            ).addTo(map_ba1755bd54d8efd740c6581d80bfbe9e);
+        
+    
+            var icon_a9a10dfe0ca61fc61e6720be300c68c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9a9eb5f98a045530d87ae25cd3f7f51e.setIcon(icon_a9a10dfe0ca61fc61e6720be300c68c3);
+        
+    
+        var popup_d6d473fac3acfa4981efe64601a60c94 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e8113292e0b59709c54300ac0c552be = $(`<div id="html_1e8113292e0b59709c54300ac0c552be" style="width: 100.0%; height: 100.0%;">Entiat: 54 earthquakes</div>`)[0];
+                popup_d6d473fac3acfa4981efe64601a60c94.setContent(html_1e8113292e0b59709c54300ac0c552be);
+            
+        
+
+        marker_9a9eb5f98a045530d87ae25cd3f7f51e.bindPopup(popup_d6d473fac3acfa4981efe64601a60c94)
+        ;
+
+        
+    
+    
+            var marker_0a6f2a31fa6bd4e879f31b7cc52f905e = L.marker(
+                [48.522181813636365, -123.04500757878786],
+                {}
+            ).addTo(map_ba1755bd54d8efd740c6581d80bfbe9e);
+        
+    
+            var icon_962ff67a240c3dd4466b51e85e4da24e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0a6f2a31fa6bd4e879f31b7cc52f905e.setIcon(icon_962ff67a240c3dd4466b51e85e4da24e);
+        
+    
+        var popup_8e713f432381bc2e46b9a45161d5e15f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_188b4b558a6c96b16cf3d739a50bfe46 = $(`<div id="html_188b4b558a6c96b16cf3d739a50bfe46" style="width: 100.0%; height: 100.0%;">Friday Harbor: 22 earthquakes</div>`)[0];
+                popup_8e713f432381bc2e46b9a45161d5e15f.setContent(html_188b4b558a6c96b16cf3d739a50bfe46);
+            
+        
+
+        marker_0a6f2a31fa6bd4e879f31b7cc52f905e.bindPopup(popup_8e713f432381bc2e46b9a45161d5e15f)
+        ;
+
+        
+    
+    
+            var marker_2d8c72459d5bed49af64386dcf5f5258 = L.marker(
+                [47.73769696868687, -121.8706717151515],
+                {}
+            ).addTo(map_ba1755bd54d8efd740c6581d80bfbe9e);
+        
+    
+            var icon_501ac07df64885cadaa262e8a068ccea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2d8c72459d5bed49af64386dcf5f5258.setIcon(icon_501ac07df64885cadaa262e8a068ccea);
+        
+    
+        var popup_1bc9965ed6a491f3e076dd7ccf7d23f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_85f8909a0dec316533bb17262e3bfb4d = $(`<div id="html_85f8909a0dec316533bb17262e3bfb4d" style="width: 100.0%; height: 100.0%;">Lake Marcel-Stillwater: 33 earthquakes</div>`)[0];
+                popup_1bc9965ed6a491f3e076dd7ccf7d23f8.setContent(html_85f8909a0dec316533bb17262e3bfb4d);
+            
+        
+
+        marker_2d8c72459d5bed49af64386dcf5f5258.bindPopup(popup_1bc9965ed6a491f3e076dd7ccf7d23f8)
+        ;
+
+        
+    
+    
+            var marker_e5c7637227dde8cfbb6758b10cbfcb79 = L.marker(
+                [46.28659137441521, -122.20940935935673],
+                {}
+            ).addTo(map_ba1755bd54d8efd740c6581d80bfbe9e);
+        
+    
+            var icon_b8b3349c0c0ec03ff69695d93112fcf5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e5c7637227dde8cfbb6758b10cbfcb79.setIcon(icon_b8b3349c0c0ec03ff69695d93112fcf5);
+        
+    
+        var popup_a4090f76d6666093f245af82a5eff77e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0964bbba19d382a83e14500a6f32219c = $(`<div id="html_0964bbba19d382a83e14500a6f32219c" style="width: 100.0%; height: 100.0%;">Morton: 228 earthquakes</div>`)[0];
+                popup_a4090f76d6666093f245af82a5eff77e.setContent(html_0964bbba19d382a83e14500a6f32219c);
+            
+        
+
+        marker_e5c7637227dde8cfbb6758b10cbfcb79.bindPopup(popup_a4090f76d6666093f245af82a5eff77e)
+        ;
+
+        
+    
+    
+            var marker_bf2d86103a8592b6e26e0d5d7351fc94 = L.marker(
+                [46.37760417083334, -122.4228750125],
+                {}
+            ).addTo(map_ba1755bd54d8efd740c6581d80bfbe9e);
+        
+    
+            var icon_bbe2e959253be5d49d8bb2d40319dea3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bf2d86103a8592b6e26e0d5d7351fc94.setIcon(icon_bbe2e959253be5d49d8bb2d40319dea3);
+        
+    
+        var popup_b1e35ce10ec1bc4db89a196e6b1ecf25 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0481d7614ab9b7247a803917c3d36c7d = $(`<div id="html_0481d7614ab9b7247a803917c3d36c7d" style="width: 100.0%; height: 100.0%;">Mossyrock: 24 earthquakes</div>`)[0];
+                popup_b1e35ce10ec1bc4db89a196e6b1ecf25.setContent(html_0481d7614ab9b7247a803917c3d36c7d);
+            
+        
+
+        marker_bf2d86103a8592b6e26e0d5d7351fc94.bindPopup(popup_b1e35ce10ec1bc4db89a196e6b1ecf25)
+        ;
+
+        
+    
+    
+            var marker_1748cf0cb7033d89539f971a551a1a3a = L.marker(
+                [46.80934848636364, -119.35621969545454],
+                {}
+            ).addTo(map_ba1755bd54d8efd740c6581d80bfbe9e);
+        
+    
+            var icon_683a0acda213a36f464c3f6745928d92 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1748cf0cb7033d89539f971a551a1a3a.setIcon(icon_683a0acda213a36f464c3f6745928d92);
+        
+    
+        var popup_b4e5b3bdbb6571984835c2b3b890814d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4c17100a782b81239bd91abf82d1640 = $(`<div id="html_b4c17100a782b81239bd91abf82d1640" style="width: 100.0%; height: 100.0%;">Othello: 22 earthquakes</div>`)[0];
+                popup_b4e5b3bdbb6571984835c2b3b890814d.setContent(html_b4c17100a782b81239bd91abf82d1640);
+            
+        
+
+        marker_1748cf0cb7033d89539f971a551a1a3a.bindPopup(popup_b4e5b3bdbb6571984835c2b3b890814d)
+        ;
+
+        
+    
+    
+            var marker_05129631e88283fd9a560d2e7158ae87 = L.marker(
+                [46.603148142592595, -121.63451851728395],
+                {}
+            ).addTo(map_ba1755bd54d8efd740c6581d80bfbe9e);
+        
+    
+            var icon_0f644cc26558377c10c0142cb2aaad66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_05129631e88283fd9a560d2e7158ae87.setIcon(icon_0f644cc26558377c10c0142cb2aaad66);
+        
+    
+        var popup_0a93aeee2fb19f16229ff6bfedde89c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2febea39543b77abf73dede8033ffaf3 = $(`<div id="html_2febea39543b77abf73dede8033ffaf3" style="width: 100.0%; height: 100.0%;">Packwood: 54 earthquakes</div>`)[0];
+                popup_0a93aeee2fb19f16229ff6bfedde89c0.setContent(html_2febea39543b77abf73dede8033ffaf3);
+            
+        
+
+        marker_05129631e88283fd9a560d2e7158ae87.bindPopup(popup_0a93aeee2fb19f16229ff6bfedde89c0)
+        ;
+
+        
+    
+    
+            var marker_09ff71a35e5924db97723f181cd5a03c = L.marker(
+                [47.819204539393944, -122.98804546363635],
+                {}
+            ).addTo(map_ba1755bd54d8efd740c6581d80bfbe9e);
+        
+    
+            var icon_490de65eed7a6f5a95812b97e1f75c92 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_09ff71a35e5924db97723f181cd5a03c.setIcon(icon_490de65eed7a6f5a95812b97e1f75c92);
+        
+    
+        var popup_4140c7b6a679c16f9b8aba61ff1e70c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_315480fa52fe7e54aca0477c631d8a16 = $(`<div id="html_315480fa52fe7e54aca0477c631d8a16" style="width: 100.0%; height: 100.0%;">Quilcene: 22 earthquakes</div>`)[0];
+                popup_4140c7b6a679c16f9b8aba61ff1e70c7.setContent(html_315480fa52fe7e54aca0477c631d8a16);
+            
+        
+
+        marker_09ff71a35e5924db97723f181cd5a03c.bindPopup(popup_4140c7b6a679c16f9b8aba61ff1e70c7)
+        ;
+
+        
+    
+    
+            var marker_7051fc334f151baa4ead19a508c2d026 = L.marker(
+                [46.86903069912281, -119.58929385526316],
+                {}
+            ).addTo(map_ba1755bd54d8efd740c6581d80bfbe9e);
+        
+    
+            var icon_c65dea190adf853dc7d9889e38e7d9fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7051fc334f151baa4ead19a508c2d026.setIcon(icon_c65dea190adf853dc7d9889e38e7d9fe);
+        
+    
+        var popup_3ce90d90c06b6e4f144a1570b91dfdbc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8116f328b974ab9412ced65b1c77fc31 = $(`<div id="html_8116f328b974ab9412ced65b1c77fc31" style="width: 100.0%; height: 100.0%;">Royal City: 38 earthquakes</div>`)[0];
+                popup_3ce90d90c06b6e4f144a1570b91dfdbc.setContent(html_8116f328b974ab9412ced65b1c77fc31);
+            
+        
+
+        marker_7051fc334f151baa4ead19a508c2d026.bindPopup(popup_3ce90d90c06b6e4f144a1570b91dfdbc)
+        ;
+
+        
+    
+    
+            var marker_1023d89fe47102ebd334fdaa0d93c2b6 = L.marker(
+                [47.68169444333333, -120.06713889],
+                {}
+            ).addTo(map_ba1755bd54d8efd740c6581d80bfbe9e);
+        
+    
+            var icon_3cb848b1ceb21a401385c6a60a531010 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1023d89fe47102ebd334fdaa0d93c2b6.setIcon(icon_3cb848b1ceb21a401385c6a60a531010);
+        
+    
+        var popup_34043bb0bf5346c9e8983d26fd34a6b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_43e8d22e4b5b9d340651f0c8d459aad6 = $(`<div id="html_43e8d22e4b5b9d340651f0c8d459aad6" style="width: 100.0%; height: 100.0%;">Waterville: 30 earthquakes</div>`)[0];
+                popup_34043bb0bf5346c9e8983d26fd34a6b8.setContent(html_43e8d22e4b5b9d340651f0c8d459aad6);
+            
+        
+
+        marker_1023d89fe47102ebd334fdaa0d93c2b6.bindPopup(popup_34043bb0bf5346c9e8983d26fd34a6b8)
+        ;
+
+        
+    
+    
+            var marker_560e7fcdfe28292fefa66e404d200551 = L.marker(
+                [46.41377777777778, -119.29425308148149],
+                {}
+            ).addTo(map_ba1755bd54d8efd740c6581d80bfbe9e);
+        
+    
+            var icon_c1d7501c19575b6e8cd54e04b84ec1f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_560e7fcdfe28292fefa66e404d200551.setIcon(icon_c1d7501c19575b6e8cd54e04b84ec1f8);
+        
+    
+        var popup_113c6dd7537085f38568b2b643120841 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a536928db2773cf0697f748b2ebd4dd = $(`<div id="html_2a536928db2773cf0697f748b2ebd4dd" style="width: 100.0%; height: 100.0%;">West Richland: 27 earthquakes</div>`)[0];
+                popup_113c6dd7537085f38568b2b643120841.setContent(html_2a536928db2773cf0697f748b2ebd4dd);
+            
+        
+
+        marker_560e7fcdfe28292fefa66e404d200551.bindPopup(popup_113c6dd7537085f38568b2b643120841)
+        ;
+
+        
+    
+</script>
+</html>

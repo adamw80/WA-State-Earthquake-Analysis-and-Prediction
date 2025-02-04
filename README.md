@@ -98,3 +98,12 @@ The dataset used in this project is sourced from the [United States Geological S
 ## Acknowledgments
 
 This project is developed as part of a comprehensive analysis and predictive modeling study of seismic activities in Washington State. Special thanks to the USGS for providing access to the earthquake dataset.
+
+## License
+This project is licensed under the MIT License.
+
+## Contact
+For questions or feedback, feel free to reach out:
+- **Email:** Adam.RivardWalter@gmail.com  
+- **GitHub:** [adamw80](https://github.com/adamw80)
+
